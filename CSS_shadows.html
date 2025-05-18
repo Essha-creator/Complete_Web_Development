@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --container-size:1200px
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            height: var(--container-size);
+            width: var(--container-size);
+            margin: 2px;
+            padding: 2px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            margin: 5px;
+            padding: 5px;
+            width: 400px;
+            height: 400px;
+            background-color: chartreuse;
+            border: 2px solid blue;
+            /* box-shadow: -20px -15px black; */
+            /* box-shadow: 20px 10px 15px brown; */
+            box-shadow: 20px 10px 15px 5px var(--primary-color);
+            /* box-shadow: inset -10px -10px 15px rgb(4, 116, 4); */
+            /* box-shadow: 10px 10px 15px red, 20px 20px 15px blue; */
+        }
+        #head1{
+            /* text-shadow: 2px 3px 3px blue; */
+            /* text-shadow: rgb(221, 43, 176) 2px 3px 3px; */
+            /* text-shadow: 2px 3px purple; */
+            /* text-shadow: 2px 3px ; */
+            text-shadow: 2px 3px 3px red, 3px 4px 3px blue, 4px 5px 3px cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="picture_2.jpg" alt="poster 2">
+            <h1 id="head1">Welcome to CodeHelp</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo deserunt adipisci tenetur sit, maiores voluptatum ab, consequatur totam, excepturi recusandae veniam minus. Vel, laudantium!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>HTML Form</h2>
+    <form action="backend.php">
+        <label for="name"> Name: </label>
+        <div>
+            <input type="text" name ="my_name" id ="name">
+        </div>
+        
+        
+        <br>
+        <label for="Age">Age:</label>
+        <div>
+         <input type ="number" name = "my_age" id ="Age">
+        </div>
+        <br>
+        <div>
+            Email: <input type = "email" name = "my_Email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name = "my_date">
+        </div>
+        <br>
+        <label for ="accept">Accept:</label>
+        <div>
+            <input type = "checkbox" name = "my_accept" id="accept"> 
+        </div>
+        <br>
+        <div>
+            Gender:<label for ="male"> Male</label>
+            <input type ="radio" name = "my_gender" id = "male">
+            <label for="female">Female</label>
+            <input type ="radio" name = "my_gender" id = "female">
+        </div>
+        <br>
+        <div>
+        <label for="car" >Car:</label>
+        <select name="my_car" id="car">
+            <option value="honda">Honda</option>
+            <option value="lambo">Lambergini</option>
+        </select>
+        </div>
+        <br>
+        <div>
+            Class:<select name="my_class" id="class">
+                <option value ="1">class 1</option>
+                <option value ="2">class 2</option>
+                <option value = "3">class 3</option>
+            </select>
+        </div>
+            
+        
+        <br>
+        <div>
+            <input type = "reset" value = "Reset now!">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name = "my_text" cols="50" rows ="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <h3>Financial aid:</h3><textarea name="my_aid" cols="80" rows="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type = "submit" value = "submit please">
+        </div>
+    </form>
+    <hr>
+
+    
+</body>
+</html>

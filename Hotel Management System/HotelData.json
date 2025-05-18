@@ -1,0 +1,1 @@
+{"room":[{"roomNumber":1,"type":"single","Available":true,"pricePerNight":5000},{"roomNumber":2,"type":"Double","Available":true,"pricePerNight":10000},{"roomNumber":3,"type":"Double","Available":false,"pricePerNight":10000}],"bookings":[{"customerName":"John","checkIn":"2-1-2024","checkOut":"10-1-2024","roomNumber":"3","bookingTime":"06:22:22"}]}

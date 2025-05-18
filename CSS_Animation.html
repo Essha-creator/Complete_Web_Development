@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+
+
+        }
+        .box{
+            width: 380px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            margin: 10px;
+            position: relative;
+            border-radius: 10px;
+            /* animation-name: right_movement;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+            animation-direction: linear;
+            animation-fill-mode: backwards; */
+            animation: 5s linear 2s infinite alternate none right_movement
+        }
+        @keyframes right_movement {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                left: 1200px;
+            }
+            
+        }
+        @keyframes left_movement{
+            from{
+                top:490px;
+                left:1350px
+            }
+            to{
+                top:490px;
+                left: 0px;
+            }
+        }
+        #box2{
+            width: 380px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            margin: 10px;
+            position: relative;
+            border-radius: 10px;
+            animation: left_movement 5s ease-in 2s infinite alternate none running 
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 3px solid yellow;
+            margin: 10px;
+            position: relative;
+            border-radius: 100px;
+            animation:  mid_movement 10s ease-in-out 0s infinite alternate-reverse none running 
+        }
+        @keyframes mid_movement{
+            0%{
+                top:5%;
+                left: 60%;
+            }
+            30%{
+                top: 50%;
+                left: 10%;
+            }
+            60%{
+                top: 0%;
+                left: 80%;
+            }
+            100%{
+                top: 80%;
+                left: 10%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div id="box2">
+
+        </div>
+        <div id="box3">
+
+        </div>
+    </div>
+</body>
+</html>

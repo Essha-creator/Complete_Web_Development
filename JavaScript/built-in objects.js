@@ -1,0 +1,10 @@
+console.log("Hy");
+console.log(new Date());
+console.log(new Date(1998,0,11,7));
+console.log(new Date('5 september 2024 7:15').getDay());
+console.log(new Date('7 August 2024 3:15').getDay());
+console.log(new Date('5 March 2024 6:00').getFullYear());
+console.log(new Date('2 March 2024 5:00').setFullYear(1998));
+let dd = new Date('2 October 1999 3:00');
+dd.setFullYear(2012);
+console.log(dd);

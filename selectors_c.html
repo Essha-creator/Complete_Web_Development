@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #main-1{color: rgb(255, 81, 0);}
+        #main-2.hy{background-color: rgb(0, 255, 64);}
+        p{color: hotpink;
+           background-color: aquamarine ;
+         border: 2px solid red;}
+        .tim{color: white;
+            background-color: rgb(34, 97, 139);}
+            /* grouping selector */
+        strong,span,footer{background-color: cadetblue;
+        border: 3px solid hotpink;}
+        div > p {
+            color: hotpink;
+            background-color:azure;
+            border: 2px solid rgb(205, 96, 244);
+        }
+        div p {
+            color: azure;
+            background-color: black;
+            border: 2px solid black;
+        }
+        * {
+            margin: 4px;
+            padding: 1px;
+        }
+        a:visited{
+            color: chocolate;
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:active{
+            color: hotpink;
+        }
+        a:hover{
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <p id="main-1" class="hy">This is my first para</p>
+    <div>
+        <p id="main-2" class="hy">This is my second para.</p>
+    </div>
+    <p>This is my third para</p>
+    <p class="tim">This is Tim here</p>
+    
+    <span>This is span</span>
+    <strong>This is strong</strong>
+    <footer>This is footer.</footer>
+    <div>
+        <p>This is para inside the div.</p>
+        <span> This is tim <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam placeat delectus omnis!</p> holton</span>
+        <div>
+            <a href="https://pixabay.com/music/">Free music download</a>
+            <a href="https://www.google.com">Go to Google</a>
+            <a href="https://www.ntu.edu.pk/index.php">Ntu </a>
+        </div>
+    </div>
+</body>
+</html>

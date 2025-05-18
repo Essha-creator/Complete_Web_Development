@@ -1,0 +1,12 @@
+{
+    "name":"Love Babbar",
+    "score":11.75,
+    "isAdmin": true,
+    "Jug":null,
+    "shopitem":["clothes","shoes","bags", {"a":true}],
+    "obj1":{
+        "name":"nested",
+        "age":22,
+        "shopitem1":["clothes","food","bag",{"b":false}]
+    }
+}
